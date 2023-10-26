@@ -20,25 +20,17 @@ For trip duration, a `Linear Regression` was constructed that achieved an R-squa
 ![Accuracy score of the models](images/importance_plot.png)
 
 # Conclusion
-This project not only predicts Falcon 9 `first stage landings` but also highlights the significant `cost-saving` potential associated with successful landings. SpaceX's competitive advantage in offering cost-effective rocket launches heavily relies on this ability to reuse the first stage. In the future, adding more information like `weather-related` data since weather conditions can significantly influence the outcome of a rocket launch, may contribute to enhanced decision-making and mission success in space exploration efforts.
-
-Type II errors `false negative` are more common. For this use case, this is more desirable, because it's better for a driver to be pleasantly surprised by a generous tip when they weren't expecting one than to be disappointed by a low tip when they were expecting a generous one.
+Type II errors `false negative` were more common in the final predictive model. For this use case, this was more desirable, because it's better for a driver to be pleasantly surprised by a generous tip when they weren't expecting one than to be disappointed by a low tip when they were expecting a generous one. The model has the potential to assist taxi drivers in anticipating whether they will receive generous tips, but it does not provide a detailed understanding of how each variable affects the exact tip amount. In the future, enhancing the model with additional data related to a rider's historical tipping patterns could prove advantageous in addressing the stakeholder's business challenges.
 
 ----
 ----
 
 # Installation
-- Clone this repo to your computer. `git clone` <[repository_url](https://github.com/farahdahir/SpaceX_Falcon9)>
-- Navigate to the project directory: using `cd SpaceX_Falcon9`
+- Clone this repo to your computer. `git clone` <[repository_url](https://github.com/farahdahir/Automatidata)>
+- Navigate to the project directory: using `cd Automatidata`
 - Install the required libraries from the `requirements.txt` file using pip: `pip install -r requirements.txt`
 
 # Reviewing the Project
-The project follows a storytelling structure and should be reviewed in the following order:
-- [data_acquisition](https://github.com/farahdahir/SpaceX_Falcon9/blob/master/data_acquisition.ipynb)
-- [eda](https://github.com/farahdahir/SpaceX_Falcon9/blob/master/eda.ipynb)
-- [launch_site_analysis](https://github.com/farahdahir/SpaceX_Falcon9/blob/master/launch_site_analysis.ipynb)
-- [plotly_dash_app](https://github.com/farahdahir/SpaceX_Falcon9/blob/master/plotly_dash_app.ipynb)
-- [predictive_model](https://github.com/farahdahir/SpaceX_Falcon9/blob/master/predictive_model.ipynb)
+The project follows has 3 files and 2 folders. The `automatidata.ipynb` is the main notebook for the project. It is divided into sections aigning with the PACE frame-work Plan, Analyse, Construct and Execute. For the Construct stage some code cells are commented out, where the predictive models are fitted to save you time. This does not affect the overral work flow of the project, since the models were fitted and saved as pickle files.
 
-The project also includes a `presentation` PDF file, an `images` folder and `data` folder. Remember all datasets are generated within the notebooks, so you can choose to clear the data folder (if applicable) by running the following command: `rm -rf data/*`
-
+The project also includes an images folder and data folder. Remember all datasets are stored in the data folder along with the pickled models.
