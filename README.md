@@ -17,7 +17,7 @@ A `two-sample t-test` was also carried out that revealed there was a `statistica
 For trip duration, a `Linear Regression` was constructed that achieved an R-squared value of 0.7319, which suggests that it explains approximately 73% of the variance in the dependent variable **trip duration**. And as for predicting generous tippers, `XGBoost` model that achieved precision of 70%, recall of 48%, f1-score of 57%, and accuracy of 74%, on the test set outperformed the RandomForest Model constructed before. In the final model, `duration`, `trip_distance`, `fare_amount`, `extra` and `passenger_count` had the highest importance, in that order. These variables were most helpful in predicting the outcome variable, **generous**.
 
 
-![Accuracy score of the models](images/importance_plot.png)
+![Feature importance](images/importance_plot.png)
 
 # Conclusion
 Type II errors `false negative` were more common in the final predictive model. For this use case, this was more desirable, because it's better for a driver to be pleasantly surprised by a generous tip when they weren't expecting one than to be disappointed by a low tip when they were expecting a generous one. The model has the potential to assist taxi drivers in anticipating whether they will receive generous tips, but it does not provide a detailed understanding of how each variable affects the exact tip amount. In the future, enhancing the model with additional data related to a rider's historical tipping patterns could prove advantageous in addressing the stakeholder's business challenges.
